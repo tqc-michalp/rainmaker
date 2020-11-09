@@ -1,0 +1,13 @@
+!/log/.keep
+!/storage/.keep
+!/tmp/.keep
+!/tmp/caching-dev.txt
+.byebug_history
+.env
+.idea/
+.vscode/*
+/.bundle
+/log/*
+/storage/*
+/tmp/*
+db/structure.sql
