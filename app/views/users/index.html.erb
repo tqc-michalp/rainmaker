@@ -1,0 +1,14 @@
+<h2>nice to see you!</h2>
+<table>
+  <thead>
+  <tr>
+    <th>first name</th>
+    <th>last name</th>
+  </tr>
+  </thead>
+  <tbody>
+    <%= render partial: 'user', collection: @users %>
+  </tbody>
+</table>
+
+<%= link_to 'Export to xls', users_path(format: :xls), target: "_blank", rel: "noopener noreferrer" %>

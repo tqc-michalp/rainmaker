@@ -61,7 +61,11 @@ GEM
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
     ast (2.4.1)
-    bootsnap (1.5.0)
+    axlsx (2.0.1)
+      htmlentities (~> 4.3.1)
+      nokogiri (>= 1.4.1)
+      rubyzip (~> 1.0.0)
+    bootsnap (1.5.1)
       msgpack (~> 1.0)
     builder (3.2.4)
     coderay (1.1.3)
@@ -78,8 +82,11 @@ GEM
     factory_bot_rails (6.1.0)
       factory_bot (~> 6.1.0)
       railties (>= 5.0.0)
+    faker (2.14.0)
+      i18n (>= 1.6, < 2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    htmlentities (4.3.4)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     loofah (2.7.0)
@@ -185,6 +192,7 @@ GEM
     rubocop-thread_safety (0.4.2)
       rubocop (>= 0.53.0)
     ruby-progressbar (1.10.1)
+    rubyzip (1.0.0)
     semantic_range (2.3.0)
     shoulda-matchers (4.4.1)
       activesupport (>= 4.2.0)
@@ -213,9 +221,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  axlsx
   bootsnap
   dotenv-rails
   factory_bot_rails
+  faker
   pg
   pry-rails
   puma

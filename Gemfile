@@ -8,11 +8,13 @@ gem 'rails', '6.1.0.rc1'
 gem 'pg'
 gem 'puma'
 
+gem 'axlsx'
 gem 'bootsnap', require: false
 gem 'pry-rails'
 gem 'webpacker'
 
 group :development, :test do
+  gem 'faker'
   gem 'dotenv-rails'
   gem 'rubocop', require: false
   gem 'rubocop-performance', require: false
